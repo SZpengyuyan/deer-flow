@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-03-24T14:55:35.304553",
+  "source_files": 1,
+  "total_functions": 3,
+  "total_classes": 1,
+  "total_tests_generated": 26,
+  "output_dir": "d:\\deer-flow\\test-playground\\tests",
+  "style": "pytest",
+  "language": "python",
+  "scope_file": null,
+  "files": [
+    {
+      "source": "d:\\deer-flow\\test-playground\\source\\sample_code.py",
+      "test_file": "d:\\deer-flow\\test-playground\\tests\\test_sample_code.py"
+    }
+  ]
+}

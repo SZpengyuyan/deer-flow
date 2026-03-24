@@ -1,0 +1,84 @@
+{
+  "conclusion": "PASS",
+  "message": "✅ 质量门禁检查通过，项目可以发布",
+  "timestamp": "2026-03-24T14:59:43.067084",
+  "summary": {
+    "total": 7,
+    "passed": 5,
+    "failed": 0,
+    "warned": 0,
+    "skipped": 2
+  },
+  "checks": [
+    {
+      "name": "构建验证",
+      "category": "build",
+      "status": "PASS",
+      "required": true,
+      "actual_value": "",
+      "threshold": "",
+      "detail": "Python 语法检查通过 (1 个文件)",
+      "error_message": ""
+    },
+    {
+      "name": "类型检查",
+      "category": "type_check",
+      "status": "PASS",
+      "required": false,
+      "actual_value": "0 个错误",
+      "threshold": "≤ 0",
+      "detail": "mypy: 0 个类型错误",
+      "error_message": ""
+    },
+    {
+      "name": "代码规范",
+      "category": "lint",
+      "status": "SKIP",
+      "required": false,
+      "actual_value": "",
+      "threshold": "",
+      "detail": "未安装 Lint 工具（ruff/flake8）",
+      "error_message": ""
+    },
+    {
+      "name": "测试通过率",
+      "category": "test",
+      "status": "PASS",
+      "required": true,
+      "actual_value": "100.0%",
+      "threshold": "≥ 90%",
+      "detail": "总计 32 | 通过 32 | 失败 0 | 错误 0 | 通过率 100.0%",
+      "error_message": ""
+    },
+    {
+      "name": "代码覆盖率",
+      "category": "coverage",
+      "status": "SKIP",
+      "required": true,
+      "actual_value": "",
+      "threshold": "",
+      "detail": "未提供覆盖率数据",
+      "error_message": ""
+    },
+    {
+      "name": "安全检查",
+      "category": "security",
+      "status": "PASS",
+      "required": true,
+      "actual_value": "CRITICAL:0 HIGH:0 MEDIUM:0",
+      "threshold": "CRITICAL≤0 HIGH≤0 MEDIUM≤5",
+      "detail": "安全扫描: CRITICAL 0, HIGH 0, MEDIUM 0, LOW 0",
+      "error_message": ""
+    },
+    {
+      "name": "缺陷检查",
+      "category": "bugs",
+      "status": "PASS",
+      "required": true,
+      "actual_value": "CRITICAL:0 HIGH:0",
+      "threshold": "CRITICAL≤0 HIGH≤2",
+      "detail": "总缺陷: 0 (CRITICAL:0, HIGH:0, MEDIUM:0, LOW:0)",
+      "error_message": ""
+    }
+  ]
+}

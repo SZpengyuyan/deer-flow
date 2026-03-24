@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-03-24T14:58:54.355144",
+  "total_files": 1,
+  "total_tests": 52,
+  "summary": {
+    "critical": 1,
+    "high": 0,
+    "medium": 2,
+    "low": 1,
+    "total": 4,
+    "auto_fixed": 1
+  },
+  "issues": [
+    {
+      "id": "try_except_in_test",
+      "severity": "MEDIUM",
+      "file": "d:\\deer-flow\\test-playground\\tests\\test_sample_code.py",
+      "line": 0,
+      "test_name": "(10 个测试)",
+      "description": "[合并 10 个同类问题] 测试中使用 try/except 可能吞掉异常，掩盖真实错误",
+      "suggestion": "使用 pytest.raises() 替代 try/except 进行异常测试",
+      "confidence": 85.0,
+      "auto_fixed": false
+    },
+    {
+      "id": "weak_assertion",
+      "severity": "MEDIUM",
+      "file": "d:\\deer-flow\\test-playground\\tests\\test_sample_code.py",
+      "line": 0,
+      "test_name": "(8 个测试)",
+      "description": "[合并 8 个同类问题] 使用了弱断言: assert x is not None，缺乏精确性",
+      "suggestion": "替换为精确的值比较（如 assert result == expected_value）",
+      "confidence": 90.0,
+      "auto_fixed": true
+    },
+    {
+      "id": "always_pass",
+      "severity": "CRITICAL",
+      "file": "d:\\deer-flow\\test-playground\\tests\\test_sample_code.py",
+      "line": 0,
+      "test_name": "(4 个测试)",
+      "description": "[合并 4 个同类问题] 测试函数中没有任何断言，将永远通过",
+      "suggestion": "添加 assert 语句或使用 pytest.raises() 验证预期行为",
+      "confidence": 95.0,
+      "auto_fixed": false
+    },
+    {
+      "id": "duplicate_test",
+      "severity": "LOW",
+      "file": "d:\\deer-flow\\test-playground\\tests\\test_sample_code.py",
+      "line": 0,
+      "test_name": "(26 个测试)",
+      "description": "[合并 26 个同类问题] 测试与 test_calculate_discount_parametrized 逻辑重复",
+      "suggestion": "合并为参数化测试 (@pytest.mark.parametrize)",
+      "confidence": 80.0,
+      "auto_fixed": false
+    }
+  ]
+}
